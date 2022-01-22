@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Sidebar.module.css";
-import { Link } from "react-router-dom";
+import "./index.css";
+import { Link, useRouteMatch } from "react-router-dom";
 
 const SideBar = ({ categoriesMenu }) => {
+  const match = useRouteMatch("/:categoryId");
+
   return (
     <div>
       <div className={classes.sidebar}>
         {categoriesMenu.map((menuItem) => (
-          <Link className="active" to={`/${menuItem.id}`} key={menuItem.id}>
+          <Link
+            className={
+              match?.params?.categoryId === menuItem.id.toString()
+                ? "active"
+                : ""
+            }
+            to={`/${menuItem.id}`}
+            key={menuItem.id}
+          >
             {menuItem.name}
           </Link>
         ))}

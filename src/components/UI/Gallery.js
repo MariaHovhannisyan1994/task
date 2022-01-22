@@ -6,7 +6,8 @@ function Gallery() {
   return (
     <div>
       <Switch>
-        <Route path="/:categoryId" component={Posts}></Route>
+        <Route path="/" exact={true} component={Posts}/>
+        <Route path="/:categoryId" component={Posts}/>
       </Switch>
     </div>
   );

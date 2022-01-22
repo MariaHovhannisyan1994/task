@@ -17,8 +17,8 @@
   text-transform: uppercase;
 }
 
-.sidebar a.active {
-  background-color: purple;
+.sidebar .active {
+  background-color: black;
   color: white;
 }
 

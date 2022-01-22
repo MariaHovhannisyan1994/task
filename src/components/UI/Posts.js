@@ -31,8 +31,8 @@ const Posts = () => {
   return (
     <div className={classes.container}>
       <div className={classes.pictures}>
-        {items?.map((item) => (
-          <div className={classes.wrapper} key={item.id}>
+        {items?.map((item,index) => (
+          <div className={classes.wrapper} key={index}>
             <img src={item.url} alt={item.title} />
           </div>
         ))}
