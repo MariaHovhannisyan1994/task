@@ -15,7 +15,7 @@ const Posts = () => {
   useEffect(() => {
     dispatch(
       fetchItems({
-        params: { category_ids: categoryId, limit: 10, page, order: "desc" },
+        params: { category_ids: categoryId, limit: 12, page, order: "desc" },
       })
     );
   }, [dispatch, categoryId, page]);

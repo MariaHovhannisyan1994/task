@@ -17,10 +17,6 @@
   text-transform: uppercase;
 }
 
-.sidebar .active {
-  background-color: black;
-  color: white;
-}
 
 .sidebar a:hover:not(.active) {
   background-color: #4b4b4b;

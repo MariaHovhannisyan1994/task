@@ -7,10 +7,12 @@
 .pictures {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pictures .wrapper {
   max-width: 250px;
+  margin: 5px;
 }
 
 .wrapper img {
